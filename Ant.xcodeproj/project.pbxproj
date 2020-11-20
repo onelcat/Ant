@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E6F39E2567C0E000AC4A48 /* LaunchScreen.storyboard */; };
 		28E6F3AB2567C0E000AC4A48 /* AntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3AA2567C0E000AC4A48 /* AntTests.swift */; };
 		28E6F3B62567C0E000AC4A48 /* AntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3B52567C0E000AC4A48 /* AntUITests.swift */; };
+		28E6F3CE2567C14600AC4A48 /* KingfisherDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */; };
+		28E6F3CF2567C14600AC4A48 /* KingfisherDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		28E6F3D52567C19700AC4A48 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3D42567C19700AC4A48 /* Moya */; };
+		28E6F3D72567C19700AC4A48 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3D62567C19700AC4A48 /* RxMoya */; };
+		28E6F3DC2567C2A300AC4A48 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3DB2567C2A300AC4A48 /* ObjectMapper */; };
+		28E6F3E12567C89F00AC4A48 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3E02567C89F00AC4A48 /* Differentiator */; };
+		28E6F3E32567C89F00AC4A48 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3E22567C89F00AC4A48 /* RxDataSources */; };
+		28E6F3E82567D07300AC4A48 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6F3E72567D07300AC4A48 /* Reusable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,20 @@
 			remoteInfo = Ant;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28E6F3D02567C14700AC4A48 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				28E6F3CF2567C14600AC4A48 /* KingfisherDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28E6F3902567C0DC00AC4A48 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +78,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E6F3DC2567C2A300AC4A48 /* ObjectMapper in Frameworks */,
+				28E6F3E82567D07300AC4A48 /* Reusable in Frameworks */,
+				28E6F3E12567C89F00AC4A48 /* Differentiator in Frameworks */,
+				28E6F3D72567C19700AC4A48 /* RxMoya in Frameworks */,
+				28E6F3E32567C89F00AC4A48 /* RxDataSources in Frameworks */,
+				28E6F3D52567C19700AC4A48 /* Moya in Frameworks */,
+				28E6F3CE2567C14600AC4A48 /* KingfisherDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +167,22 @@
 				28E6F38C2567C0DC00AC4A48 /* Sources */,
 				28E6F38D2567C0DC00AC4A48 /* Frameworks */,
 				28E6F38E2567C0DC00AC4A48 /* Resources */,
+				28E6F3D02567C14700AC4A48 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Ant;
+			packageProductDependencies = (
+				28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */,
+				28E6F3D42567C19700AC4A48 /* Moya */,
+				28E6F3D62567C19700AC4A48 /* RxMoya */,
+				28E6F3DB2567C2A300AC4A48 /* ObjectMapper */,
+				28E6F3E02567C89F00AC4A48 /* Differentiator */,
+				28E6F3E22567C89F00AC4A48 /* RxDataSources */,
+				28E6F3E72567D07300AC4A48 /* Reusable */,
+			);
 			productName = Ant;
 			productReference = 28E6F3902567C0DC00AC4A48 /* Ant.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +254,13 @@
 				Base,
 			);
 			mainGroup = 28E6F3872567C0DC00AC4A48;
+			packageReferences = (
+				28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				28E6F3D32567C19700AC4A48 /* XCRemoteSwiftPackageReference "Moya" */,
+				28E6F3DA2567C2A300AC4A48 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				28E6F3E62567D07300AC4A48 /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = 28E6F3912567C0DC00AC4A48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,6 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,6 +635,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+		28E6F3D32567C19700AC4A48 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		28E6F3DA2567C2A300AC4A48 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		28E6F3E62567D07300AC4A48 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherDynamic;
+		};
+		28E6F3D42567C19700AC4A48 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3D32567C19700AC4A48 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		28E6F3D62567C19700AC4A48 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3D32567C19700AC4A48 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		28E6F3DB2567C2A300AC4A48 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3DA2567C2A300AC4A48 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		28E6F3E02567C89F00AC4A48 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		28E6F3E22567C89F00AC4A48 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		28E6F3E72567D07300AC4A48 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E6F3E62567D07300AC4A48 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28E6F3882567C0DC00AC4A48 /* Project object */;
 }
