@@ -14,61 +14,29 @@ import RxDataSources
 import Differentiator
 
 // 不是
-
 import Reusable
 
-struct MySection {
+struct VCModel {
+    var title: String
+    var vc: UIViewController
+}
+
+struct SectionOfVC {
     var header: String
     var items: [Item]
 }
 
-// 发送高度
+extension SectionOfVC: SectionModelType {
+    
+  typealias Item = VCModel
 
-extension MySection : AnimatableSectionModelType {
-    typealias Item = Int
-
-    var identity: String {
-        return header
-    }
-
-    init(original: MySection, items: [Item]) {
-        self = original
-        self.items = items
-    }
-    
-    func getHeight() -> Observable<CGFloat> {
-        return Observable.create { (observer) -> Disposable in
-            observer.onNext(10)
-            observer.onCompleted()
-            return Disposables.create()
-        }
-    }
-}
-
-class LocationTbaleViewCell: UITableViewCell,NibLoadable,Reusable {
-    
-    @IBOutlet weak var lImageView: UIImageView!
-    
-    @IBOutlet weak var lName: UILabel!
-    
-    @IBOutlet weak var fButton: UIButton!
-    
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//        debugPrint("初实话")
-//    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        debugPrint("进行布局连线")
-        
-    }
+   init(original: SectionOfVC, items: [Item]) {
+    self = original
+    self.items = items
+  }
     
 }
 
-class CUITableViewCell:  UITableViewCell,Reusable {
-    
-}
 
 class ViewController: UIViewController {
     
@@ -76,61 +44,40 @@ class ViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    var dataSource: RxTableViewSectionedAnimatedDataSource<MySection>?
+    var dataSource: RxTableViewSectionedReloadDataSource<SectionOfVC>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionOfVC>(
             configureCell: { ds, tv, index, item in
+                let cell = tv.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell(style: .default, reuseIdentifier: "Cell")
                 
-                guard let cell = tv.dequeueReusableCell(withIdentifier: "Cell", for: index)as?LocationTbaleViewCell else {
-                    fatalError()
-                }
+                cell.textLabel?.text = item.title
                 
-                cell.lName?.text = "Item \(item)"
-
                 return cell
-            },
-            titleForHeaderInSection: { ds, index in
-                return ds.sectionModels[index].header
             }
         )
 
         self.dataSource = dataSource
         
-        let sections = [
-            MySection(header: "First section", items: [
-                1,
-                2
-            ]),
-            MySection(header: "Second section", items: [
-                3,
-                4
-            ])
-        ]
+
+        let items = VCModel(title: "onelcat", vc: UIViewController())
+        let sections = [SectionOfVC(header: "onelcat", items: [items])]
         
         Observable.just(sections)
             .bind(to: tableView.rx.items(dataSource: dataSource))
               .disposed(by: disposeBag)
 
         tableView.rx.itemSelected
-            .subscribe { (index) in
-                
-            }
-            .disposed(by: disposeBag)
-
-
-        
-        tableView.rx.itemSelected
             .subscribe(onNext:{ [weak self] indexPath in
-                debugPrint("点击按钮",indexPath)
-//               self?.navigationController?.pushViewController(RxSearchVC(), animated: true)
+                let vc = sections[0].items[indexPath.item].vc
+                self?.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by:disposeBag)
-//        tableView.rx.setDelegate(self)
-//              .disposed(by: disposeBag)
+
     }
     
     
