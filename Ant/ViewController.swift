@@ -7,15 +7,22 @@
 
 import UIKit
 import RxCocoa
-import RxDataSources
+
 import RxSwift
-import Reusable
+
+import RxDataSources
 import Differentiator
+
+// 不是
+
+import Reusable
 
 struct MySection {
     var header: String
     var items: [Item]
 }
+
+// 发送高度
 
 extension MySection : AnimatableSectionModelType {
     typealias Item = Int
@@ -28,9 +35,17 @@ extension MySection : AnimatableSectionModelType {
         self = original
         self.items = items
     }
+    
+    func getHeight() -> Observable<CGFloat> {
+        return Observable.create { (observer) -> Disposable in
+            observer.onNext(10)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
 }
 
-class LocationTbaleViewCell: UITableViewCell,Reusable {
+class LocationTbaleViewCell: UITableViewCell,NibLoadable,Reusable {
     
     @IBOutlet weak var lImageView: UIImageView!
     
@@ -66,28 +81,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-//        tableView.register(cellType: LocationTbaleViewCell.self)
-        
+
         let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
             configureCell: { ds, tv, index, item in
                 
-                let cell = tv.dequeueReusableCell(withIdentifier: "Cell") as! LocationTbaleViewCell
-                    
-                
-//                let date = Date(timeIntervalSince1970: <#T##TimeInterval#>)
-                //?? UITableViewCell(style: .default, reuseIdentifier: "Cell")
-//                cell.textLabel?.text = "Item \(item)"
-//                return cell
-                
-                // 自适应布局无效？
-//                let cell: LocationTbaleViewCell = tv.dequeueReusableCell(for: index)
-//                debugPrint("文字中绘制失败")
+                guard let cell = tv.dequeueReusableCell(withIdentifier: "Cell", for: index)as?LocationTbaleViewCell else {
+                    fatalError()
+                }
                 
                 cell.lName?.text = "Item \(item)"
 
-                
-                
                 return cell
             },
             titleForHeaderInSection: { ds, index in
@@ -112,27 +115,28 @@ class ViewController: UIViewController {
             .bind(to: tableView.rx.items(dataSource: dataSource))
               .disposed(by: disposeBag)
 
-         
-        tableView.rx.setDelegate(self)
-              .disposed(by: disposeBag)
+        tableView.rx.itemSelected
+            .subscribe { (index) in
+                
+            }
+            .disposed(by: disposeBag)
+
+
+        
+        tableView.rx.itemSelected
+            .subscribe(onNext:{ [weak self] indexPath in
+                debugPrint("点击按钮",indexPath)
+//               self?.navigationController?.pushViewController(RxSearchVC(), animated: true)
+            })
+            .disposed(by:disposeBag)
+//        tableView.rx.setDelegate(self)
+//              .disposed(by: disposeBag)
     }
     
     
 }
 
 extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
-        // you can also fetch item
-        guard let item = dataSource?[indexPath],
-        // .. or section and customize what you like
-            dataSource?[indexPath.section] != nil
-            else {
-            return 0.0
-        }
-
-        return CGFloat(40 + item * 10)
-    }
 }
 
 
