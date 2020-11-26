@@ -9,9 +9,13 @@ import UIKit
 
 class ScrollViewController: UIViewController {
 
+    @IBOutlet weak var bgView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bgView.layer.borderColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+        bgView.layer.borderWidth = 1.0
         // Do any additional setup after loading the view.
     }
     
