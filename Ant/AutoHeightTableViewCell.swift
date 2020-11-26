@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import Reusable
 
-class AutoHeightTableViewCell: UITableViewCell {
+class AutoHeightTableViewCell: UITableViewCell{
 
     @IBOutlet weak var textView:  UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+//        textView.delegate = self
         // Initialization code
     }
 

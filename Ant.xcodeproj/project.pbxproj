@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28581A8E256B623D007AAA68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28581A8D256B623D007AAA68 /* SnapKit */; };
 		28BEBCEF2568F00500908025 /* LayoutTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCEE2568F00500908025 /* LayoutTabelViewCell.swift */; };
 		28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */; };
 		28BEBCFB2568F0C600908025 /* AutoHeightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28BEBCF92568F0C600908025 /* AutoHeightTableViewCell.xib */; };
+		28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C48304256F5FCD0059A7DA /* ScrollViewController.swift */; };
 		28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */; };
 		28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */; };
 		28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3972567C0DC00AC4A48 /* ViewController.swift */; };
@@ -63,6 +65,7 @@
 		28BEBCEE2568F00500908025 /* LayoutTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTabelViewCell.swift; sourceTree = "<group>"; };
 		28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTableViewCell.swift; sourceTree = "<group>"; };
 		28BEBCF92568F0C600908025 /* AutoHeightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoHeightTableViewCell.xib; sourceTree = "<group>"; };
+		28C48304256F5FCD0059A7DA /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		28E6F3902567C0DC00AC4A48 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E6F3DC2567C2A300AC4A48 /* ObjectMapper in Frameworks */,
+				28581A8E256B623D007AAA68 /* SnapKit in Frameworks */,
 				28E6F3E82567D07300AC4A48 /* Reusable in Frameworks */,
 				28E6F3E12567C89F00AC4A48 /* Differentiator in Frameworks */,
 				28E6F3D72567C19700AC4A48 /* RxMoya in Frameworks */,
@@ -144,6 +148,7 @@
 				28BEBCEE2568F00500908025 /* LayoutTabelViewCell.swift */,
 				28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */,
 				28BEBCF92568F0C600908025 /* AutoHeightTableViewCell.xib */,
+				28C48304256F5FCD0059A7DA /* ScrollViewController.swift */,
 			);
 			path = Ant;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				28E6F3E02567C89F00AC4A48 /* Differentiator */,
 				28E6F3E22567C89F00AC4A48 /* RxDataSources */,
 				28E6F3E72567D07300AC4A48 /* Reusable */,
+				28581A8D256B623D007AAA68 /* SnapKit */,
 			);
 			productName = Ant;
 			productReference = 28E6F3902567C0DC00AC4A48 /* Ant.app */;
@@ -269,6 +275,7 @@
 				28E6F3DA2567C2A300AC4A48 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				28E6F3E62567D07300AC4A48 /* XCRemoteSwiftPackageReference "Reusable" */,
+				28581A8C256B623D007AAA68 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 28E6F3912567C0DC00AC4A48 /* Products */;
 			projectDirPath = "";
@@ -315,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */,
+				28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */,
 				28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */,
 				28BEBCEF2568F00500908025 /* LayoutTabelViewCell.swift in Sources */,
 				28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */,
@@ -649,6 +657,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		28581A8C256B623D007AAA68 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -692,6 +708,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		28581A8D256B623D007AAA68 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28581A8C256B623D007AAA68 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */;

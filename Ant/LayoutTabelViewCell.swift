@@ -12,53 +12,40 @@ import Differentiator
 import RxCocoa
 import RxSwift
 
-struct DataSouce {
-    var items: [Item]
-}
-extension DataSouce: SectionModelType {
-    
-  typealias Item = Int
 
-   init(original: DataSouce, items: [Item]) {
-    self = original
-    self.items = items
-  }
-    
-}
-
-class AutoLayoutTableView: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
+class AutoLayoutTableView: UIViewController,UITextViewDelegate {
     
     
-
-    var dataSource: RxTableViewSectionedReloadDataSource<DataSouce>?
+    @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var textViewHeightLayoutConstraint: NSLayoutConstraint!
+    
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.register(UINib.init(nibName: "AutoHeightTableViewCell", bundle: nil), forCellReuseIdentifier: "AutoHeightTableViewCell")
-        
-        let dataSource = RxTableViewSectionedReloadDataSource<DataSouce>(
-            configureCell: { ds, tv, index, item in
-                guard let cell = tv.dequeueReusableCell(withIdentifier: "AutoHeightTableViewCell", for: index) as? AutoHeightTableViewCell else {
-                    fatalError()
-                }
-                return cell
-            }
-        )
-        
-        self.dataSource = dataSource
-        let data = [DataSouce(items: [1])]
-        
-        Observable.just(data)
-            .bind(to: tableView.rx.items(dataSource: dataSource))
-              .disposed(by: DisposeBag())
-        
+        debugPrint(textView)
+
+//        let label = UILabel()
+//        label.sizeThatFits(CGSize(width: UIScreen.main.bounds.width, height: 200))
+
+        textView.rx.text.changed.subscribe { (text) in
+            debugPrint("输入框的文字变化",text)
+            let newSize = self.textView.sizeThatFits(CGSize(width: UIScreen.main.bounds.width, height: CGFloat.greatestFiniteMagnitude))
+            debugPrint("最新的高度", newSize)
+            
+//            self.textView.text = text
+            self.textView.sizeToFit()
+            
+        } onError: { (_) in
+            
+        } onCompleted: {
+            debugPrint("文字输入变化完成")
+        } onDisposed: {
+            
+        }.disposed(by: disposeBag)
+
         
     }
-    
-    
     
 }

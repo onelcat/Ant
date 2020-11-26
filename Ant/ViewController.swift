@@ -6,84 +6,69 @@
 //
 
 import UIKit
-import RxCocoa
-
-import RxSwift
-
-import RxDataSources
-import Differentiator
-
-// 不是
-import Reusable
-
-struct VCModel {
-    var title: String
-    var vc: UIViewController
-}
-
-struct SectionOfVC {
-    var header: String
-    var items: [Item]
-}
-
-extension SectionOfVC: SectionModelType {
-    
-  typealias Item = VCModel
-
-   init(original: SectionOfVC, items: [Item]) {
-    self = original
-    self.items = items
-  }
-    
-}
-
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let disposeBag = DisposeBag()
+    lazy var vc: AutoLayoutTableView = {
+        return AutoLayoutTableView()
+    }()
     
-    var dataSource: RxTableViewSectionedReloadDataSource<SectionOfVC>?
+    let dataSource = ["AutoLayoutTableView","ScrollViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.keyboardDismissMode = .onDrag
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        let dataSource = RxTableViewSectionedReloadDataSource<SectionOfVC>(
-            configureCell: { ds, tv, index, item in
-                let cell = tv.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell(style: .default, reuseIdentifier: "Cell")
-                
-                cell.textLabel?.text = item.title
-                
-                return cell
-            }
-        )
+//        tableView.register(UINib(nibName: "AutoHeightTableViewCell", bundle: nil), forCellReuseIdentifier: "AutoHeightTableViewCell")
 
-        self.dataSource = dataSource
-        
-
-        let items = VCModel(title: "onelcat", vc: UIViewController())
-        let sections = [SectionOfVC(header: "onelcat", items: [items])]
-        
-        Observable.just(sections)
-            .bind(to: tableView.rx.items(dataSource: dataSource))
-              .disposed(by: disposeBag)
-
-        tableView.rx.itemSelected
-            .subscribe(onNext:{ [weak self] indexPath in
-                let vc = sections[0].items[indexPath.item].vc
-                self?.navigationController?.pushViewController(vc, animated: true)
-            })
-            .disposed(by:disposeBag)
-
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+//    @objc private
+//    func keyboardWillShow(_ notification: Notification?) {
+//        debugPrint("显示键盘")
+//    }
+//
+//    @objc private
+//    func keyboardWillHide(_ notification: Notification?) {
+//        debugPrint("隐藏键盘")
+//    }
     
+}
+
+extension ViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataSource.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = dataSource[indexPath.item]
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let vc = AutoLayoutTableView()
+        let id = self.dataSource[indexPath.item]
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: id)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension ViewController: UITableViewDelegate {
+    
 }
+
+
 
 
