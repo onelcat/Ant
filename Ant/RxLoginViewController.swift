@@ -9,6 +9,19 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+enum ValidationResult {
+    case ok(message: String)
+    case empty
+    case validating
+    case failed(message: String)
+}
+
+class RxLoginViewModel {
+//    let validatedUsername: Driver<ValidationResult>
+//    let validatedPassword: Driver<ValidationResult>
+//    let validatedPasswordRepeated: Driver<ValidationResult>
+}
+
 class RxLoginViewController: UIViewController {
 
     @IBOutlet weak var invalidUserNameLabel:UILabel!

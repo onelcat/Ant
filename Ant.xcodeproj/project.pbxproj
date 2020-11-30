@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		28581A8E256B623D007AAA68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28581A8D256B623D007AAA68 /* SnapKit */; };
+		2880882C25749A9D00899A6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2880882B25749A9D00899A6C /* Lottie */; };
+		2880883025749B6800899A6C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880882F25749B6800899A6C /* LottieViewController.swift */; };
+		2880883425749BBA00899A6C /* 39411_relax.json in Resources */ = {isa = PBXBuildFile; fileRef = 2880883325749BBA00899A6C /* 39411_relax.json */; };
 		28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */; };
 		28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */; };
 		28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C48304256F5FCD0059A7DA /* ScrollViewController.swift */; };
@@ -62,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2880882F25749B6800899A6C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		2880883325749BBA00899A6C /* 39411_relax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 39411_relax.json; sourceTree = "<group>"; };
 		28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
 		28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTableViewCell.swift; sourceTree = "<group>"; };
 		28C48304256F5FCD0059A7DA /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 			files = (
 				28E6F3DC2567C2A300AC4A48 /* ObjectMapper in Frameworks */,
 				28581A8E256B623D007AAA68 /* SnapKit in Frameworks */,
+				2880882C25749A9D00899A6C /* Lottie in Frameworks */,
 				28E6F3E82567D07300AC4A48 /* Reusable in Frameworks */,
 				28E6F3E12567C89F00AC4A48 /* Differentiator in Frameworks */,
 				28E6F3D72567C19700AC4A48 /* RxMoya in Frameworks */,
@@ -118,6 +124,7 @@
 		28C4830F256F96C70059A7DA /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				2880883325749BBA00899A6C /* 39411_relax.json */,
 				28E6F39C2567C0E000AC4A48 /* Assets.xcassets */,
 				28E6F39E2567C0E000AC4A48 /* LaunchScreen.storyboard */,
 				28E6F3A12567C0E000AC4A48 /* Info.plist */,
@@ -164,6 +171,7 @@
 				28E6F3972567C0DC00AC4A48 /* ViewController.swift */,
 				28C48304256F5FCD0059A7DA /* ScrollViewController.swift */,
 				28C4830A256F968F0059A7DA /* RxLoginViewController.swift */,
+				2880882F25749B6800899A6C /* LottieViewController.swift */,
 				28E6F3992567C0DC00AC4A48 /* Main.storyboard */,
 			);
 			path = Ant;
@@ -213,6 +221,7 @@
 				28E6F3E22567C89F00AC4A48 /* RxDataSources */,
 				28E6F3E72567D07300AC4A48 /* Reusable */,
 				28581A8D256B623D007AAA68 /* SnapKit */,
+				2880882B25749A9D00899A6C /* Lottie */,
 			);
 			productName = Ant;
 			productReference = 28E6F3902567C0DC00AC4A48 /* Ant.app */;
@@ -292,6 +301,7 @@
 				28E6F3DF2567C89F00AC4A48 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				28E6F3E62567D07300AC4A48 /* XCRemoteSwiftPackageReference "Reusable" */,
 				28581A8C256B623D007AAA68 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2880882A25749A9D00899A6C /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 28E6F3912567C0DC00AC4A48 /* Products */;
 			projectDirPath = "";
@@ -310,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */,
+				2880883425749BBA00899A6C /* 39411_relax.json in Resources */,
 				28E6F39D2567C0E000AC4A48 /* Assets.xcassets in Resources */,
 				28E6F39B2567C0DC00AC4A48 /* Main.storyboard in Resources */,
 			);
@@ -341,6 +352,7 @@
 				28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */,
 				28C4830B256F968F0059A7DA /* RxLoginViewController.swift in Sources */,
 				28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */,
+				2880883025749B6800899A6C /* LottieViewController.swift in Sources */,
 				28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */,
 				28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */,
 			);
@@ -681,6 +693,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		2880882A25749A9D00899A6C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.9;
+			};
+		};
 		28E6F3CC2567C14600AC4A48 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -728,6 +748,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28581A8C256B623D007AAA68 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		2880882B25749A9D00899A6C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2880882A25749A9D00899A6C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		28E6F3CD2567C14600AC4A48 /* KingfisherDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
