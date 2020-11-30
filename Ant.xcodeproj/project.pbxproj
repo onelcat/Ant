@@ -11,6 +11,10 @@
 		2880882C25749A9D00899A6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2880882B25749A9D00899A6C /* Lottie */; };
 		2880883025749B6800899A6C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880882F25749B6800899A6C /* LottieViewController.swift */; };
 		2880883425749BBA00899A6C /* 39411_relax.json in Resources */ = {isa = PBXBuildFile; fileRef = 2880883325749BBA00899A6C /* 39411_relax.json */; };
+		288088382574A2EE00899A6C /* RxTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288088372574A2EE00899A6C /* RxTBViewController.swift */; };
+		2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880883D2574A38700899A6C /* RxNibTableViewCell.swift */; };
+		288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2880883E2574A38700899A6C /* RxNibTableViewCell.xib */; };
+		288088442574A39600899A6C /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288088432574A39600899A6C /* RxTableViewCell.swift */; };
 		28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */; };
 		28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */; };
 		28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C48304256F5FCD0059A7DA /* ScrollViewController.swift */; };
@@ -67,6 +71,10 @@
 /* Begin PBXFileReference section */
 		2880882F25749B6800899A6C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		2880883325749BBA00899A6C /* 39411_relax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 39411_relax.json; sourceTree = "<group>"; };
+		288088372574A2EE00899A6C /* RxTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTBViewController.swift; sourceTree = "<group>"; };
+		2880883D2574A38700899A6C /* RxNibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNibTableViewCell.swift; sourceTree = "<group>"; };
+		2880883E2574A38700899A6C /* RxNibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxNibTableViewCell.xib; sourceTree = "<group>"; };
+		288088432574A39600899A6C /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
 		28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
 		28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTableViewCell.swift; sourceTree = "<group>"; };
 		28C48304256F5FCD0059A7DA /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +143,10 @@
 		28C48311256F96E20059A7DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */,
 				28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */,
+				2880883D2574A38700899A6C /* RxNibTableViewCell.swift */,
+				2880883E2574A38700899A6C /* RxNibTableViewCell.xib */,
+				288088432574A39600899A6C /* RxTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -167,12 +177,14 @@
 				28C48311256F96E20059A7DA /* View */,
 				28C4830F256F96C70059A7DA /* resource */,
 				28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */,
+				28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */,
 				28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */,
 				28E6F3972567C0DC00AC4A48 /* ViewController.swift */,
 				28C48304256F5FCD0059A7DA /* ScrollViewController.swift */,
 				28C4830A256F968F0059A7DA /* RxLoginViewController.swift */,
 				2880882F25749B6800899A6C /* LottieViewController.swift */,
 				28E6F3992567C0DC00AC4A48 /* Main.storyboard */,
+				288088372574A2EE00899A6C /* RxTBViewController.swift */,
 			);
 			path = Ant;
 			sourceTree = "<group>";
@@ -321,6 +333,7 @@
 			files = (
 				28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */,
 				2880883425749BBA00899A6C /* 39411_relax.json in Resources */,
+				288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */,
 				28E6F39D2567C0E000AC4A48 /* Assets.xcassets in Resources */,
 				28E6F39B2567C0DC00AC4A48 /* Main.storyboard in Resources */,
 			);
@@ -347,9 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288088382574A2EE00899A6C /* RxTBViewController.swift in Sources */,
 				28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */,
 				28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */,
+				2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */,
 				28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */,
+				288088442574A39600899A6C /* RxTableViewCell.swift in Sources */,
 				28C4830B256F968F0059A7DA /* RxLoginViewController.swift in Sources */,
 				28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */,
 				2880883025749B6800899A6C /* LottieViewController.swift in Sources */,

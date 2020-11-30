@@ -11,11 +11,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
         
-    let dataSource = ["AutoLayoutTableView","ScrollViewController","RxLoginViewController","LottieViewController"]
+    let dataSource = ["AutoLayoutTableView","ScrollViewController","RxLoginViewController","LottieViewController","RxTBViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.keyboardDismissMode = .onDrag
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 }
