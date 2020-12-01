@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283273D825761672005CD3C9 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283273D725761672005CD3C9 /* Shop.storyboard */; };
+		283273DC25761B3E005CD3C9 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273DB25761B3E005CD3C9 /* SelectLocationViewController.swift */; };
+		283273E325761D56005CD3C9 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273E225761D56005CD3C9 /* PublishViewController.swift */; };
+		283273E72576206A005CD3C9 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273E62576206A005CD3C9 /* CLLocationManager+Rx.swift */; };
+		283273EB25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273EA25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift */; };
 		28581A8E256B623D007AAA68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28581A8D256B623D007AAA68 /* SnapKit */; };
 		2880882C25749A9D00899A6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2880882B25749A9D00899A6C /* Lottie */; };
 		2880883025749B6800899A6C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880882F25749B6800899A6C /* LottieViewController.swift */; };
@@ -69,6 +74,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		283273D725761672005CD3C9 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		283273DB25761B3E005CD3C9 /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		283273E225761D56005CD3C9 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		283273E62576206A005CD3C9 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		283273EA25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		2880882F25749B6800899A6C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		2880883325749BBA00899A6C /* 39411_relax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 39411_relax.json; sourceTree = "<group>"; };
 		288088372574A2EE00899A6C /* RxTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTBViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +139,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		283273DF25761B6A005CD3C9 /* Shoping */ = {
+			isa = PBXGroup;
+			children = (
+				283273D725761672005CD3C9 /* Shop.storyboard */,
+				283273DB25761B3E005CD3C9 /* SelectLocationViewController.swift */,
+				283273E225761D56005CD3C9 /* PublishViewController.swift */,
+				283273E62576206A005CD3C9 /* CLLocationManager+Rx.swift */,
+				283273EA25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			name = Shoping;
+			sourceTree = "<group>";
+		};
 		28C4830F256F96C70059A7DA /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +196,7 @@
 		28E6F3922567C0DC00AC4A48 /* Ant */ = {
 			isa = PBXGroup;
 			children = (
+				283273DF25761B6A005CD3C9 /* Shoping */,
 				28C48311256F96E20059A7DA /* View */,
 				28C4830F256F96C70059A7DA /* resource */,
 				28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */,
@@ -331,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283273D825761672005CD3C9 /* Shop.storyboard in Resources */,
 				28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */,
 				2880883425749BBA00899A6C /* 39411_relax.json in Resources */,
 				288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */,
@@ -365,12 +389,16 @@
 				28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */,
 				2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */,
 				28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */,
+				283273DC25761B3E005CD3C9 /* SelectLocationViewController.swift in Sources */,
 				288088442574A39600899A6C /* RxTableViewCell.swift in Sources */,
 				28C4830B256F968F0059A7DA /* RxLoginViewController.swift in Sources */,
 				28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */,
+				283273E72576206A005CD3C9 /* CLLocationManager+Rx.swift in Sources */,
 				2880883025749B6800899A6C /* LottieViewController.swift in Sources */,
 				28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */,
 				28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */,
+				283273EB25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				283273E325761D56005CD3C9 /* PublishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
