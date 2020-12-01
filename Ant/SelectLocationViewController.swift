@@ -197,6 +197,7 @@ class SelectLocationViewController: UIViewController {
         
         let buttnoTap = selectedButton.rx.tap
         
+        // 记得还是用weak
         _ = buttnoTap.subscribe(onNext: { [weak self] _ in
             debugPrint("进行数据提交")
 //            self.dismiss(animated: true, completion: nil)
@@ -204,8 +205,8 @@ class SelectLocationViewController: UIViewController {
                 // 这里还多 一些内存
 //                self?.mapView?.removeFromSuperview()
 //                self?.view.removeFromSuperview()
-                self?.view = nil
-                self = nil
+//                self?.view = nil
+//                self = nil
             })
             
         }).disposed(by: disposeBag)
