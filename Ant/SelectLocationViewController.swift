@@ -97,7 +97,7 @@ class LocationManager: NSObject {
                 return reverseGeocodeLocation($0)
             }
             .flatMap{ $0.asDriver(onErrorJustReturn: []) }
-            .flatMap{
+            .flatMapFirst{
                 return $0.first.map(Driver.just) ?? Driver.empty()
             }
     
@@ -177,16 +177,17 @@ class SelectLocationViewController: UIViewController {
         } onCompleted: {
             debugPrint("位置更新完成")
         } onDisposed: {
-            debugPrint("徐爱欲")
+            debugPrint("最后销毁")
         }.disposed(by: disposeBag)
 
         let mark = LocationManager.shared.placemark
-        
-        mark.asObservable().subscribe { (event) in
+
+        mark.asObservable().subscribe { [weak self] (event) in
+//            guard let self = self else { return }
             switch event {
             case let .next(mark):
-                self.nameLabel.text = mark.name
-                self.getAddress(mark)
+                self?.nameLabel.text = mark.name
+                self?.getAddress(mark)
             case .error(_):
                 debugPrint("数据解析错误")
             case .completed:
@@ -196,9 +197,17 @@ class SelectLocationViewController: UIViewController {
         
         let buttnoTap = selectedButton.rx.tap
         
-        _ = buttnoTap.subscribe(onNext: { _ in
+        _ = buttnoTap.subscribe(onNext: { [weak self] _ in
             debugPrint("进行数据提交")
-            self.dismiss(animated: true, completion: nil)
+//            self.dismiss(animated: true, completion: nil)
+            self?.dismiss(animated: true, completion: {
+                // 这里还多 一些内存
+//                self?.mapView?.removeFromSuperview()
+//                self?.view.removeFromSuperview()
+                self?.view = nil
+                self = nil
+            })
+            
         }).disposed(by: disposeBag)
         
     }
