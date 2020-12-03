@@ -13,6 +13,19 @@ import RxCocoa
 import UIKit
 import Kingfisher
 
+extension UILabel{
+    
+    
+    public var rx_text: ControlProperty<String> {
+        let source: Observable<String> = self.rx.observe(String.self, "text").map { $0 ?? ""}
+        let setter: (UILabel, String) -> Void = { $0.text = $1 }
+        let bindingObserver = Binder(self, binding: setter)
+        return ControlProperty<String>(values: source, valueSink: bindingObserver)
+    }
+
+}
+
+// 静态数据只进行数据的显示
 class TaskDetailsViewModel: ReactiveCompatible {
     
     let API = bangbangwoProvider
@@ -41,7 +54,29 @@ class TaskDetailsViewModel: ReactiveCompatible {
     
     
     
-    private var dataSouce: TaskDetailsModel?
+    private var dataSouce: TaskDetailsModel? {
+
+        didSet {
+            bindTo()
+        }
+    }
+    
+    private var isBind = false
+    func bindTo() {
+        if isBind { return }
+        self.isBind = true
+        let avatar = BehaviorRelay<Resource?>(value: self.dataSouce?.avatarUrl)
+        avatar.bind(to: self.userAvatar).disposed(by: disposeBag)
+
+//        avatar.on
+
+        // 发送出数据
+        let name = BehaviorRelay<String?>(value: self.dataSouce?.taskTitle).asDriver().distinctUntilChanged()
+        name.drive(self.name).disposed(by: disposeBag)
+        
+        let step1 = BehaviorRelay<String?>(value: self.dataSouce?.taskStepDescArray[0]).asDriver().distinctUntilChanged()
+        step1.drive(self.step1).disposed(by: disposeBag)
+    }
     
     init(userAvatar: Binder<Resource?>, name: Binder<String?>, count: Binder<String?>, gold: Binder<String?>, warning: Binder<String?>, step1: Binder<String?>, qrImage: Binder<Resource?>, step2: Binder<String?>, code: Binder<String?>, sampleImage: Binder<Resource?>) {
         
@@ -56,15 +91,7 @@ class TaskDetailsViewModel: ReactiveCompatible {
         self.code = code
         self.sampleImage = sampleImage
         
-        
-        let avatar = BehaviorRelay<Resource?>(value: self.dataSouce?.avatarUrl).asDriver()
-        
-        avatar.drive(self.userAvatar).disposed(by: disposeBag)
 
-        let name = BehaviorRelay<String?>(value: self.dataSouce?.taskTitle).asDriver().distinctUntilChanged()
-        name.drive(self.name).disposed(by: disposeBag)
-        
-        
         // 获取任务详情
         API.rx.request(.taskDetails(nil, ""))
             .mapObject(ResponseData<TaskDetailsModel>.self)
@@ -75,6 +102,7 @@ class TaskDetailsViewModel: ReactiveCompatible {
                     assert(false,response.head.msg)
                     return
                 }
+                
                 self.dataSouce = response.data
                 
             } onError: { (error) in

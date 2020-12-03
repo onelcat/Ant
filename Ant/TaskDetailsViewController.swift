@@ -250,8 +250,7 @@ class TaskDetailsViewController: UIViewController {
         ma.append(atr0)
         ma.append(atr1)
         warningLabel.attributedText = ma
-//        userAvatarImageView.rx.image.orEmpty
-//        nameLabel.rx.text
+
         vm = TaskDetailsViewModel(userAvatar: userAvatarImageView.kf.rx.image(), name: nameLabel.rx.text, count: countLabel.rx.text, gold: goldLabel.rx.text, warning: warningLabel.rx.text, step1: step1Label.rx.text, qrImage: self.qrImageView.kf.rx.image(), step2: step2Label.rx.text, code: codeLabel.rx.text, sampleImage: sampleImageView.kf.rx.image())
 
         // Do any additional setup after loading the view.

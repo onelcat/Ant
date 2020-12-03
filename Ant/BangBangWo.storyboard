@@ -519,7 +519,7 @@
                         <outlet property="shareCodeButton" destination="jwp-rK-a6v" id="JcR-Ly-iQF"/>
                         <outlet property="shareQRButton" destination="LTc-n2-sVh" id="lRz-q9-8qv"/>
                         <outlet property="shareQRLabel" destination="k1l-fV-EOI" id="87d-UR-1Eu"/>
-                        <outlet property="step1Label" destination="y5M-p4-kS7" id="0wA-me-bhE"/>
+                        <outlet property="step1Label" destination="y5M-p4-kS7" id="P6i-j2-VaP"/>
                         <outlet property="step1TipView" destination="FpA-JI-fgg" id="SIi-qW-4DX"/>
                         <outlet property="step2Label" destination="HvA-2i-aGl" id="TNj-vE-p2x"/>
                         <outlet property="step2TipView" destination="wmC-eI-uG7" id="pC2-vN-iZj"/>
