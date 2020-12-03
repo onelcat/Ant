@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
         
-    let dataSource = [("Main","AutoLayoutTableView"),("Main","ScrollViewController"),("Main","RxLoginViewController"),("Main","LottieViewController"),("Main","RxTBViewController"),("Shop","PublishViewController")]
+    let dataSource = [("Main","AutoLayoutTableView"),("Main","ScrollViewController"),("Main","RxLoginViewController"),("Main","LottieViewController"),("Main","RxTBViewController"),("Shop","PublishViewController"),("BangBangWo","TaskDetailsViewController")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

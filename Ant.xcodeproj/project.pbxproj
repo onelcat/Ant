@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282B0F4A2578D52500630B8D /* Single+MoyaObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F492578D52500630B8D /* Single+MoyaObjectMapper.swift */; };
+		282B0F4E2578D54E00630B8D /* ObserverType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F4D2578D54E00630B8D /* ObserverType+ObjectMapper.swift */; };
+		282B0F522578D57A00630B8D /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F512578D57A00630B8D /* Observable+ObjectMapper.swift */; };
+		282B0F5C2578D67500630B8D /* TaskDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F5B2578D67500630B8D /* TaskDetailsViewModel.swift */; };
+		282B0F622578D6B700630B8D /* TaskDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F612578D6B700630B8D /* TaskDetailsModel.swift */; };
+		282B0F672578DB5300630B8D /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F662578DB5300630B8D /* Kingfisher+Rx.swift */; };
+		282B0F6D2578DB7100630B8D /* KingfisherManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B0F6C2578DB7100630B8D /* KingfisherManager+Rx.swift */; };
 		283273D825761672005CD3C9 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283273D725761672005CD3C9 /* Shop.storyboard */; };
 		283273DC25761B3E005CD3C9 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273DB25761B3E005CD3C9 /* SelectLocationViewController.swift */; };
 		283273E325761D56005CD3C9 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273E225761D56005CD3C9 /* PublishViewController.swift */; };
 		283273E72576206A005CD3C9 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273E62576206A005CD3C9 /* CLLocationManager+Rx.swift */; };
 		283273EB25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283273EA25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift */; };
 		28581A8E256B623D007AAA68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28581A8D256B623D007AAA68 /* SnapKit */; };
+		28767D2825773DAB0084BA05 /* BangBangWo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28767D2725773DAB0084BA05 /* BangBangWo.storyboard */; };
+		28767D2C25773DC20084BA05 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28767D2B25773DC20084BA05 /* TaskDetailsViewController.swift */; };
 		2880882C25749A9D00899A6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2880882B25749A9D00899A6C /* Lottie */; };
 		2880883025749B6800899A6C /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880882F25749B6800899A6C /* LottieViewController.swift */; };
 		2880883425749BBA00899A6C /* 39411_relax.json in Resources */ = {isa = PBXBuildFile; fileRef = 2880883325749BBA00899A6C /* 39411_relax.json */; };
@@ -20,6 +29,7 @@
 		2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880883D2574A38700899A6C /* RxNibTableViewCell.swift */; };
 		288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2880883E2574A38700899A6C /* RxNibTableViewCell.xib */; };
 		288088442574A39600899A6C /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288088432574A39600899A6C /* RxTableViewCell.swift */; };
+		28B21D20257767B500A2F44E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21D1F257767B500A2F44E /* API.swift */; };
 		28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */; };
 		28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */; };
 		28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C48304256F5FCD0059A7DA /* ScrollViewController.swift */; };
@@ -74,18 +84,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		282B0F492578D52500630B8D /* Single+MoyaObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+MoyaObjectMapper.swift"; sourceTree = "<group>"; };
+		282B0F4D2578D54E00630B8D /* ObserverType+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObserverType+ObjectMapper.swift"; sourceTree = "<group>"; };
+		282B0F512578D57A00630B8D /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		282B0F5B2578D67500630B8D /* TaskDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewModel.swift; sourceTree = "<group>"; };
+		282B0F612578D6B700630B8D /* TaskDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsModel.swift; sourceTree = "<group>"; };
+		282B0F662578DB5300630B8D /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
+		282B0F6C2578DB7100630B8D /* KingfisherManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KingfisherManager+Rx.swift"; sourceTree = "<group>"; };
 		283273D725761672005CD3C9 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
 		283273DB25761B3E005CD3C9 /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
 		283273E225761D56005CD3C9 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		283273E62576206A005CD3C9 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		283273EA25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		283273EE257640D0005CD3C9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		28767D2725773DAB0084BA05 /* BangBangWo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BangBangWo.storyboard; sourceTree = "<group>"; };
+		28767D2B25773DC20084BA05 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
 		2880882F25749B6800899A6C /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		2880883325749BBA00899A6C /* 39411_relax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 39411_relax.json; sourceTree = "<group>"; };
 		288088372574A2EE00899A6C /* RxTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTBViewController.swift; sourceTree = "<group>"; };
 		2880883D2574A38700899A6C /* RxNibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNibTableViewCell.swift; sourceTree = "<group>"; };
 		2880883E2574A38700899A6C /* RxNibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxNibTableViewCell.xib; sourceTree = "<group>"; };
 		288088432574A39600899A6C /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
+		28B21D1F257767B500A2F44E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
 		28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTableViewCell.swift; sourceTree = "<group>"; };
 		28C48304256F5FCD0059A7DA /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +160,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		282B0F602578D68B00630B8D /* MoayobjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				282B0F492578D52500630B8D /* Single+MoyaObjectMapper.swift */,
+				282B0F4D2578D54E00630B8D /* ObserverType+ObjectMapper.swift */,
+				282B0F512578D57A00630B8D /* Observable+ObjectMapper.swift */,
+			);
+			name = MoayobjectMapper;
+			sourceTree = "<group>";
+		};
+		282B0F652578DB4500630B8D /* RxKingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				282B0F662578DB5300630B8D /* Kingfisher+Rx.swift */,
+				282B0F6C2578DB7100630B8D /* KingfisherManager+Rx.swift */,
+			);
+			name = RxKingfisher;
+			sourceTree = "<group>";
+		};
 		283273DF25761B6A005CD3C9 /* Shoping */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +191,21 @@
 			name = Shoping;
 			sourceTree = "<group>";
 		};
-		28C4830F256F96C70059A7DA /* resource */ = {
+		28767D2625773D8C0084BA05 /* BangBangWo */ = {
+			isa = PBXGroup;
+			children = (
+				282B0F652578DB4500630B8D /* RxKingfisher */,
+				282B0F602578D68B00630B8D /* MoayobjectMapper */,
+				28767D2725773DAB0084BA05 /* BangBangWo.storyboard */,
+				28767D2B25773DC20084BA05 /* TaskDetailsViewController.swift */,
+				28B21D1F257767B500A2F44E /* API.swift */,
+				282B0F5B2578D67500630B8D /* TaskDetailsViewModel.swift */,
+				282B0F612578D6B700630B8D /* TaskDetailsModel.swift */,
+			);
+			name = BangBangWo;
+			sourceTree = "<group>";
+		};
+		28C4830F256F96C70059A7DA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				2880883325749BBA00899A6C /* 39411_relax.json */,
@@ -160,7 +213,7 @@
 				28E6F39E2567C0E000AC4A48 /* LaunchScreen.storyboard */,
 				28E6F3A12567C0E000AC4A48 /* Info.plist */,
 			);
-			name = resource;
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		28C48311256F96E20059A7DA /* View */ = {
@@ -197,9 +250,10 @@
 		28E6F3922567C0DC00AC4A48 /* Ant */ = {
 			isa = PBXGroup;
 			children = (
+				28767D2625773D8C0084BA05 /* BangBangWo */,
 				283273DF25761B6A005CD3C9 /* Shoping */,
 				28C48311256F96E20059A7DA /* View */,
-				28C4830F256F96C70059A7DA /* resource */,
+				28C4830F256F96C70059A7DA /* Resource */,
 				28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */,
 				28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */,
 				28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */,
@@ -360,6 +414,7 @@
 				28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */,
 				2880883425749BBA00899A6C /* 39411_relax.json in Resources */,
 				288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */,
+				28767D2825773DAB0084BA05 /* BangBangWo.storyboard in Resources */,
 				28E6F39D2567C0E000AC4A48 /* Assets.xcassets in Resources */,
 				28E6F39B2567C0DC00AC4A48 /* Main.storyboard in Resources */,
 			);
@@ -386,9 +441,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				282B0F522578D57A00630B8D /* Observable+ObjectMapper.swift in Sources */,
+				282B0F4E2578D54E00630B8D /* ObserverType+ObjectMapper.swift in Sources */,
+				282B0F672578DB5300630B8D /* Kingfisher+Rx.swift in Sources */,
 				288088382574A2EE00899A6C /* RxTBViewController.swift in Sources */,
+				282B0F4A2578D52500630B8D /* Single+MoyaObjectMapper.swift in Sources */,
 				28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */,
+				28767D2C25773DC20084BA05 /* TaskDetailsViewController.swift in Sources */,
+				282B0F6D2578DB7100630B8D /* KingfisherManager+Rx.swift in Sources */,
 				28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */,
+				282B0F622578D6B700630B8D /* TaskDetailsModel.swift in Sources */,
 				2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */,
 				28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */,
 				283273DC25761B3E005CD3C9 /* SelectLocationViewController.swift in Sources */,
@@ -400,7 +462,9 @@
 				28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */,
 				28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */,
 				283273EB25762084005CD3C9 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				28B21D20257767B500A2F44E /* API.swift in Sources */,
 				283273E325761D56005CD3C9 /* PublishViewController.swift in Sources */,
+				282B0F5C2578D67500630B8D /* TaskDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

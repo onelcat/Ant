@@ -148,9 +148,13 @@ class SelectLocationViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    func getAddress(_ mark: CLPlacemark) {
-        debugPrint(mark.administrativeArea,mark.subAdministrativeArea,mark.locality,mark.subLocality,mark.thoroughfare,mark.subThoroughfare)
+    func getAddress(_ mark: CLPlacemark) -> String {
         
+        let addressAr = [mark.administrativeArea,mark.subAdministrativeArea,mark.locality,mark.subLocality,mark.thoroughfare,mark.subThoroughfare]
+//        print(addressAr)
+        return addressAr.reduce("") { (str, item) -> String in
+            return str + (item ?? "")
+        }
     }
     
     override func viewDidLoad() {
@@ -183,11 +187,10 @@ class SelectLocationViewController: UIViewController {
         let mark = LocationManager.shared.placemark
 
         mark.asObservable().subscribe { [weak self] (event) in
-//            guard let self = self else { return }
             switch event {
             case let .next(mark):
                 self?.nameLabel.text = mark.name
-                self?.getAddress(mark)
+                self?.addressLabel.text = self?.getAddress(mark)
             case .error(_):
                 debugPrint("数据解析错误")
             case .completed:
@@ -198,19 +201,12 @@ class SelectLocationViewController: UIViewController {
         let buttnoTap = selectedButton.rx.tap
         
         // 记得还是用weak
+        
         _ = buttnoTap.subscribe(onNext: { [weak self] _ in
-            debugPrint("进行数据提交")
-//            self.dismiss(animated: true, completion: nil)
             self?.dismiss(animated: true, completion: {
                 // 这里还多 一些内存
-//                self?.mapView?.removeFromSuperview()
-//                self?.view.removeFromSuperview()
-//                self?.view = nil
-//                self = nil
             })
-            
         }).disposed(by: disposeBag)
-        
     }
     
     
