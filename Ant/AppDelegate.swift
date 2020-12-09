@@ -7,13 +7,25 @@
 
 import UIKit
 
+extension Date {
+    func duration(date: Date = Date()) {
+        debugPrint("时长",date.timeIntervalSince1970 - self.timeIntervalSince1970)
+    }
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+
+        
+        UserManager.test()
+        
         return true
     }
 

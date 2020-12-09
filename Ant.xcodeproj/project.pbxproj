@@ -29,6 +29,10 @@
 		2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880883D2574A38700899A6C /* RxNibTableViewCell.swift */; };
 		288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2880883E2574A38700899A6C /* RxNibTableViewCell.xib */; };
 		288088442574A39600899A6C /* RxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288088432574A39600899A6C /* RxTableViewCell.swift */; };
+		28ADBD8D25807EEF00F4EB52 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADBD8C25807EEF00F4EB52 /* UserModel.swift */; };
+		28ADBD932580AA4B00F4EB52 /* GithubUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ADBD922580AA4B00F4EB52 /* GithubUser.json */; };
+		28ADBDA22580D7C100F4EB52 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADBD9B2580C4B800F4EB52 /* YYModel.framework */; };
+		28ADBDA32580D7C100F4EB52 /* YYModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28ADBD9B2580C4B800F4EB52 /* YYModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28B21D20257767B500A2F44E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21D1F257767B500A2F44E /* API.swift */; };
 		28BEBCEF2568F00500908025 /* AutoLayoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */; };
 		28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */; };
@@ -76,6 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				28ADBDA32580D7C100F4EB52 /* YYModel.framework in Embed Frameworks */,
 				28E6F3CF2567C14600AC4A48 /* KingfisherDynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -105,6 +110,9 @@
 		2880883D2574A38700899A6C /* RxNibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNibTableViewCell.swift; sourceTree = "<group>"; };
 		2880883E2574A38700899A6C /* RxNibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxNibTableViewCell.xib; sourceTree = "<group>"; };
 		288088432574A39600899A6C /* RxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewCell.swift; sourceTree = "<group>"; };
+		28ADBD8C25807EEF00F4EB52 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		28ADBD922580AA4B00F4EB52 /* GithubUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUser.json; sourceTree = "<group>"; };
+		28ADBD9B2580C4B800F4EB52 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
 		28B21D1F257767B500A2F44E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		28BEBCEE2568F00500908025 /* AutoLayoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableView.swift; sourceTree = "<group>"; };
 		28BEBCF82568F0C600908025 /* AutoHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTableViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 				28E6F3E82567D07300AC4A48 /* Reusable in Frameworks */,
 				28E6F3E12567C89F00AC4A48 /* Differentiator in Frameworks */,
 				28E6F3D72567C19700AC4A48 /* RxMoya in Frameworks */,
+				28ADBDA22580D7C100F4EB52 /* YYModel.framework in Frameworks */,
 				28E6F3E32567C89F00AC4A48 /* RxDataSources in Frameworks */,
 				28E6F3D52567C19700AC4A48 /* Moya in Frameworks */,
 				28E6F3CE2567C14600AC4A48 /* KingfisherDynamic in Frameworks */,
@@ -205,6 +214,23 @@
 			name = BangBangWo;
 			sourceTree = "<group>";
 		};
+		28ADBD8925807EBA00F4EB52 /* WriteReadFile */ = {
+			isa = PBXGroup;
+			children = (
+				28ADBD8C25807EEF00F4EB52 /* UserModel.swift */,
+				28ADBD922580AA4B00F4EB52 /* GithubUser.json */,
+			);
+			name = WriteReadFile;
+			sourceTree = "<group>";
+		};
+		28ADBD9A2580C4B800F4EB52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28ADBD9B2580C4B800F4EB52 /* YYModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28C4830F256F96C70059A7DA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +260,7 @@
 				28E6F3A92567C0E000AC4A48 /* AntTests */,
 				28E6F3B42567C0E000AC4A48 /* AntUITests */,
 				28E6F3912567C0DC00AC4A48 /* Products */,
+				28ADBD9A2580C4B800F4EB52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +277,7 @@
 		28E6F3922567C0DC00AC4A48 /* Ant */ = {
 			isa = PBXGroup;
 			children = (
+				28ADBD8925807EBA00F4EB52 /* WriteReadFile */,
 				28767D2625773D8C0084BA05 /* BangBangWo */,
 				283273DF25761B6A005CD3C9 /* Shoping */,
 				28C48311256F96E20059A7DA /* View */,
@@ -411,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283273D825761672005CD3C9 /* Shop.storyboard in Resources */,
+				28ADBD932580AA4B00F4EB52 /* GithubUser.json in Resources */,
 				28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */,
 				2880883425749BBA00899A6C /* 39411_relax.json in Resources */,
 				288088402574A38700899A6C /* RxNibTableViewCell.xib in Resources */,
@@ -449,6 +478,7 @@
 				28BEBCFA2568F0C600908025 /* AutoHeightTableViewCell.swift in Sources */,
 				28767D2C25773DC20084BA05 /* TaskDetailsViewController.swift in Sources */,
 				282B0F6D2578DB7100630B8D /* KingfisherManager+Rx.swift in Sources */,
+				28ADBD8D25807EEF00F4EB52 /* UserModel.swift in Sources */,
 				28C48305256F5FCD0059A7DA /* ScrollViewController.swift in Sources */,
 				282B0F622578D6B700630B8D /* TaskDetailsModel.swift in Sources */,
 				2880883F2574A38700899A6C /* RxNibTableViewCell.swift in Sources */,
@@ -640,7 +670,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Ant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -649,6 +685,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -659,7 +696,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Ant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,6 +711,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
