@@ -24,7 +24,7 @@ func duration(title: String,block: () -> ()) -> Void {
     block();
     let end = CACurrentMediaTime()
     let time = (end - start) * 1000.0
-    print(title + String(format:"%8.2f", time) + "   ", separator: "", terminator: "")
+    print(title + String(format:"⏰%8.2f", time) + "    ", separator: "", terminator: "")
     print("")
 }
 
@@ -298,19 +298,19 @@ class UserManager {
         return path
     }()
 
-    // 225 byte read: 0.00019025802612304688 write: 0.001394033432006836 JSON字符串存取
+    
     lazy var path0: String = {
         var root = NSString(string: documentDirectory)
         return root.appendingPathComponent("account.json")
     }()
     
-    // 499 byte read: 0.0009238719940185547 write: 0.0009698867797851562 归档
+    
     lazy var path1: String = {
         var root = NSString(string: documentDirectory)
         return root.appendingPathComponent("account.data")
     }()
     
-    //629 byte read: 0.0002129077911376953 wirte: 0.001210927963256836 .plist文件
+    
     lazy var path2: String = {
         var root = NSString(string: documentDirectory)
         return root.appendingPathComponent("account.plist")
@@ -342,7 +342,7 @@ class UserManager {
         }
     }
     
-    // 归档 比 存json文件快 8倍
+    
     func write1(_ data: UserModel2) {
         do {
             let data = try NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true)
@@ -402,15 +402,6 @@ class UserManager {
             debugPrint(error)
             assert(false)
         }
-        
-        
-//        let json = data.yy_modelToJSONString()!
-//        do {
-//            try json.write(toFile: self.path3, atomically: true, encoding: .utf8)
-//        } catch let error {
-//            debugPrint(error)
-//            assert(false)
-//        }
         
     }
     
@@ -498,7 +489,7 @@ class UserManager {
         }
         
         print("--- 原生归档 ---")
-        duration(title: "序列化   ") {
+        duration(title: "序列化    ") {
             UserManager.shared.write1(user2)
         }
         
@@ -507,7 +498,7 @@ class UserManager {
         }
         
         print("--- ObjectMapper 转换字典 plist---")
-        duration(title: "序列化   ") {
+        duration(title: "序列化    ") {
             UserManager.shared.write2(user0)
         }
         
@@ -517,7 +508,7 @@ class UserManager {
 
         
         print("--- YYModel json string ----")
-        duration(title: "序列化   ") {
+        duration(title: "序列化    ") {
             UserManager.shared.write3(user1)
         }
         duration(title: "反序列化  ") {

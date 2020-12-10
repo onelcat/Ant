@@ -16,8 +16,6 @@ class AutoLayoutTableView: UIViewController,UITextViewDelegate, TextViewTbCellDe
     
     private var inputText:String?
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
