@@ -7,12 +7,6 @@
 
 import UIKit
 
-extension Date {
-    func duration(date: Date = Date()) {
-        debugPrint("时长",date.timeIntervalSince1970 - self.timeIntervalSince1970)
-    }
-}
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
