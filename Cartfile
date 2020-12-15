@@ -5,3 +5,4 @@ github "airbnb/lottie-ios" ~> 3.1
 github "RxSwiftCommunity/RxDataSources" ~> 4.0
 github "onevcat/Kingfisher" ~> 5.0
 github "tristanhimmelman/ObjectMapper" ~> 4.0
+github "AliSoftware/Reusable"

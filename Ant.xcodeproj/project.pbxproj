@@ -50,6 +50,8 @@
 		28D4ABEA25887BEF007D9CEB /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABDD25887BEE007D9CEB /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28D4ABEB25887BEF007D9CEB /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABDE25887BEE007D9CEB /* SnapKit.framework */; };
 		28D4ABEC25887BEF007D9CEB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABDE25887BEE007D9CEB /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4ABF225889E87007D9CEB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF125889E87007D9CEB /* ObjectMapper.framework */; };
+		28D4ABF325889E87007D9CEB /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF125889E87007D9CEB /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */; };
 		28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */; };
 		28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3972567C0DC00AC4A48 /* ViewController.swift */; };
@@ -99,6 +101,7 @@
 			files = (
 				28D4ABEC25887BEF007D9CEB /* SnapKit.framework in Embed Frameworks */,
 				28D4ABE225887BEE007D9CEB /* RxSwift.framework in Embed Frameworks */,
+				28D4ABF325889E87007D9CEB /* ObjectMapper.framework in Embed Frameworks */,
 				28D4ABE425887BEE007D9CEB /* Lottie.framework in Embed Frameworks */,
 				28D4ABE825887BEF007D9CEB /* RxCocoa.framework in Embed Frameworks */,
 				28F2F91F2587089500026C3D /* HSExtension.framework in Embed Frameworks */,
@@ -149,6 +152,7 @@
 		28D4ABDC25887BEE007D9CEB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		28D4ABDD25887BEE007D9CEB /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		28D4ABDE25887BEE007D9CEB /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		28D4ABF125889E87007D9CEB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		28E6F3902567C0DC00AC4A48 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			files = (
 				28D4ABEB25887BEF007D9CEB /* SnapKit.framework in Frameworks */,
 				28D4ABE125887BEE007D9CEB /* RxSwift.framework in Frameworks */,
+				28D4ABF225889E87007D9CEB /* ObjectMapper.framework in Frameworks */,
 				28D4ABE325887BEE007D9CEB /* Lottie.framework in Frameworks */,
 				28D4ABE725887BEF007D9CEB /* RxCocoa.framework in Frameworks */,
 				28F2F91E2587089500026C3D /* HSExtension.framework in Frameworks */,
@@ -269,6 +274,7 @@
 		28ADBD9A2580C4B800F4EB52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28D4ABF125889E87007D9CEB /* ObjectMapper.framework */,
 				28D4ABD825887BEE007D9CEB /* Kingfisher.framework */,
 				28D4ABDA25887BEE007D9CEB /* Lottie.framework */,
 				28D4ABDC25887BEE007D9CEB /* RxCocoa.framework */,
