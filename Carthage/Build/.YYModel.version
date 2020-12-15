@@ -1,18 +1,9 @@
 {
-  "Mac" : [
-
-  ],
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
   "commitish" : "1.0.4",
   "iOS" : [
     {
       "name" : "YYModel",
-      "hash" : "f5446cec14c1774575752542dd9f1f627f8707f41e82de24db56dd7f428b5ed6",
+      "hash" : "f961267c85e6b9cffd6062734b4688bad6955ee2e6cee4f896694edb403473e9",
       "linking" : "dynamic"
     }
   ]

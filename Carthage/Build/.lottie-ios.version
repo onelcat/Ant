@@ -1,0 +1,11 @@
+{
+  "commitish" : "3.1.9",
+  "iOS" : [
+    {
+      "hash" : "648913d61cfdb2ea4499e1dcf038665f2d5099e0de4d235e935461e86d85abab",
+      "name" : "Lottie",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
+    }
+  ]
+}
