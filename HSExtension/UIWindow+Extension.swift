@@ -13,7 +13,7 @@ extension UIWindow {
         if let delegate = UIApplication.shared.delegate,
            delegate.responds(to: #selector(getter: delegate.window)),
            let window = delegate.window {
-            return window!
+            return window
         }
         let windows = UIApplication.shared.windows
         if windows.count == 1 {

@@ -402,7 +402,7 @@ class UserManager {
             debugPrint(error)
             assert(false)
         }
-        
+        return nil
     }
     
     static func modeTo(model: UserModel0) -> UserModel1 {

@@ -3,4 +3,62 @@
    uuid = "9830D8AC-9FB7-466A-978F-73ACF531186A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "4480174B-4B99-4A38-B8F8-9197A59EBDA6"
+            shouldBeEnabled = "No"
+            nameForDebugger = "Runtime"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "objc_msgSend"
+            moduleName = "">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "4480174B-4B99-4A38-B8F8-9197A59EBDA6 - 9a6bdd25733d424f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_msgSend"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "E831FA30-B996-4DF5-85CE-6F33BE74DEA2"
+            shouldBeEnabled = "No"
+            nameForDebugger = "Runloop"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "CFRunLoopSourceSignal"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "E831FA30-B996-4DF5-85CE-6F33BE74DEA2 - bd899fdf7732db92"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CFRunLoopSourceSignal"
+                  moduleName = "CoreFoundation"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

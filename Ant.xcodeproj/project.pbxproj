@@ -52,6 +52,18 @@
 		28D4ABEC25887BEF007D9CEB /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABDE25887BEE007D9CEB /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28D4ABF225889E87007D9CEB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF125889E87007D9CEB /* ObjectMapper.framework */; };
 		28D4ABF325889E87007D9CEB /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF125889E87007D9CEB /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4ABF82588A832007D9CEB /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF72588A832007D9CEB /* Differentiator.framework */; };
+		28D4ABF92588A832007D9CEB /* Differentiator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABF72588A832007D9CEB /* Differentiator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4ABFE2588A84D007D9CEB /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABFD2588A84D007D9CEB /* Reusable.framework */; };
+		28D4ABFF2588A84D007D9CEB /* Reusable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4ABFD2588A84D007D9CEB /* Reusable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4AC1A2588BC71007D9CEB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC192588BC71007D9CEB /* Alamofire.framework */; };
+		28D4AC1B2588BC71007D9CEB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC192588BC71007D9CEB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4AC202588BC91007D9CEB /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC1F2588BC91007D9CEB /* Moya.framework */; };
+		28D4AC212588BC91007D9CEB /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC1F2588BC91007D9CEB /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4AC272588BCB4007D9CEB /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC252588BCB4007D9CEB /* RxRelay.framework */; };
+		28D4AC282588BCB4007D9CEB /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC252588BCB4007D9CEB /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		28D4AC292588BCB4007D9CEB /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC262588BCB4007D9CEB /* RxBlocking.framework */; };
+		28D4AC2A2588BCB4007D9CEB /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4AC262588BCB4007D9CEB /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28E6F3942567C0DC00AC4A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */; };
 		28E6F3962567C0DC00AC4A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */; };
 		28E6F3982567C0DC00AC4A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3972567C0DC00AC4A48 /* ViewController.swift */; };
@@ -60,12 +72,6 @@
 		28E6F3A02567C0E000AC4A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E6F39E2567C0E000AC4A48 /* LaunchScreen.storyboard */; };
 		28E6F3AB2567C0E000AC4A48 /* AntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3AA2567C0E000AC4A48 /* AntTests.swift */; };
 		28E6F3B62567C0E000AC4A48 /* AntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6F3B52567C0E000AC4A48 /* AntUITests.swift */; };
-		28F2F91B2587089500026C3D /* HSExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F2F9192587089500026C3D /* HSExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28F2F91E2587089500026C3D /* HSExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F2F9172587089500026C3D /* HSExtension.framework */; };
-		28F2F91F2587089500026C3D /* HSExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28F2F9172587089500026C3D /* HSExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		28F2F9322587091B00026C3D /* DevicePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F2F9312587091B00026C3D /* DevicePermissions.swift */; };
-		28F2F93A258709B600026C3D /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F2F939258709B600026C3D /* UIAlertController+Extension.swift */; };
-		28F2F942258738EE00026C3D /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F2F941258738EE00026C3D /* UIWindow+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +89,6 @@
 			remoteGlobalIDString = 28E6F38F2567C0DC00AC4A48;
 			remoteInfo = Ant;
 		};
-		28F2F91C2587089500026C3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28E6F3882567C0DC00AC4A48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28F2F9162587089500026C3D;
-			remoteInfo = HSExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,15 +99,20 @@
 			dstSubfolderSpec = 10;
 			files = (
 				28D4ABEC25887BEF007D9CEB /* SnapKit.framework in Embed Frameworks */,
+				28D4ABF92588A832007D9CEB /* Differentiator.framework in Embed Frameworks */,
+				28D4AC1B2588BC71007D9CEB /* Alamofire.framework in Embed Frameworks */,
+				28D4AC2A2588BCB4007D9CEB /* RxBlocking.framework in Embed Frameworks */,
 				28D4ABE225887BEE007D9CEB /* RxSwift.framework in Embed Frameworks */,
 				28D4ABF325889E87007D9CEB /* ObjectMapper.framework in Embed Frameworks */,
 				28D4ABE425887BEE007D9CEB /* Lottie.framework in Embed Frameworks */,
+				28D4ABFF2588A84D007D9CEB /* Reusable.framework in Embed Frameworks */,
 				28D4ABE825887BEF007D9CEB /* RxCocoa.framework in Embed Frameworks */,
-				28F2F91F2587089500026C3D /* HSExtension.framework in Embed Frameworks */,
+				28D4AC212588BC91007D9CEB /* Moya.framework in Embed Frameworks */,
 				28D4ABEA25887BEF007D9CEB /* RxMoya.framework in Embed Frameworks */,
 				28D4ABE625887BEF007D9CEB /* RxDataSources.framework in Embed Frameworks */,
 				28D4ABE025887BEE007D9CEB /* Kingfisher.framework in Embed Frameworks */,
 				28ADBDA32580D7C100F4EB52 /* YYModel.framework in Embed Frameworks */,
+				28D4AC282588BCB4007D9CEB /* RxRelay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +157,12 @@
 		28D4ABDD25887BEE007D9CEB /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		28D4ABDE25887BEE007D9CEB /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		28D4ABF125889E87007D9CEB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		28D4ABF72588A832007D9CEB /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
+		28D4ABFD2588A84D007D9CEB /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
+		28D4AC192588BC71007D9CEB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		28D4AC1F2588BC91007D9CEB /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		28D4AC252588BCB4007D9CEB /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		28D4AC262588BCB4007D9CEB /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		28E6F3902567C0DC00AC4A48 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E6F3932567C0DC00AC4A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E6F3952567C0DC00AC4A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +177,6 @@
 		28E6F3B12567C0E000AC4A48 /* AntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E6F3B52567C0E000AC4A48 /* AntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntUITests.swift; sourceTree = "<group>"; };
 		28E6F3B72567C0E000AC4A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28F2F9172587089500026C3D /* HSExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F2F9192587089500026C3D /* HSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSExtension.h; sourceTree = "<group>"; };
 		28F2F91A2587089500026C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F2F9312587091B00026C3D /* DevicePermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePermissions.swift; sourceTree = "<group>"; };
@@ -181,15 +190,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				28D4ABEB25887BEF007D9CEB /* SnapKit.framework in Frameworks */,
+				28D4ABF82588A832007D9CEB /* Differentiator.framework in Frameworks */,
+				28D4AC1A2588BC71007D9CEB /* Alamofire.framework in Frameworks */,
+				28D4AC292588BCB4007D9CEB /* RxBlocking.framework in Frameworks */,
 				28D4ABE125887BEE007D9CEB /* RxSwift.framework in Frameworks */,
 				28D4ABF225889E87007D9CEB /* ObjectMapper.framework in Frameworks */,
 				28D4ABE325887BEE007D9CEB /* Lottie.framework in Frameworks */,
+				28D4ABFE2588A84D007D9CEB /* Reusable.framework in Frameworks */,
 				28D4ABE725887BEF007D9CEB /* RxCocoa.framework in Frameworks */,
-				28F2F91E2587089500026C3D /* HSExtension.framework in Frameworks */,
+				28D4AC202588BC91007D9CEB /* Moya.framework in Frameworks */,
 				28D4ABE925887BEF007D9CEB /* RxMoya.framework in Frameworks */,
 				28D4ABE525887BEF007D9CEB /* RxDataSources.framework in Frameworks */,
 				28D4ABDF25887BEE007D9CEB /* Kingfisher.framework in Frameworks */,
 				28ADBDA22580D7C100F4EB52 /* YYModel.framework in Frameworks */,
+				28D4AC272588BCB4007D9CEB /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,13 +215,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		28E6F3AE2567C0E000AC4A48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28F2F9142587089500026C3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,6 +281,12 @@
 		28ADBD9A2580C4B800F4EB52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28D4AC262588BCB4007D9CEB /* RxBlocking.framework */,
+				28D4AC252588BCB4007D9CEB /* RxRelay.framework */,
+				28D4AC1F2588BC91007D9CEB /* Moya.framework */,
+				28D4AC192588BC71007D9CEB /* Alamofire.framework */,
+				28D4ABFD2588A84D007D9CEB /* Reusable.framework */,
+				28D4ABF72588A832007D9CEB /* Differentiator.framework */,
 				28D4ABF125889E87007D9CEB /* ObjectMapper.framework */,
 				28D4ABD825887BEE007D9CEB /* Kingfisher.framework */,
 				28D4ABDA25887BEE007D9CEB /* Lottie.framework */,
@@ -327,7 +340,6 @@
 				28E6F3902567C0DC00AC4A48 /* Ant.app */,
 				28E6F3A62567C0E000AC4A48 /* AntTests.xctest */,
 				28E6F3B12567C0E000AC4A48 /* AntUITests.xctest */,
-				28F2F9172587089500026C3D /* HSExtension.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,17 +398,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		28F2F9122587089500026C3D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28F2F91B2587089500026C3D /* HSExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		28E6F38F2567C0DC00AC4A48 /* Ant */ = {
 			isa = PBXNativeTarget;
@@ -410,7 +411,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				28F2F91D2587089500026C3D /* PBXTargetDependency */,
 			);
 			name = Ant;
 			packageProductDependencies = (
@@ -455,24 +455,6 @@
 			productReference = 28E6F3B12567C0E000AC4A48 /* AntUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		28F2F9162587089500026C3D /* HSExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28F2F9222587089500026C3D /* Build configuration list for PBXNativeTarget "HSExtension" */;
-			buildPhases = (
-				28F2F9122587089500026C3D /* Headers */,
-				28F2F9132587089500026C3D /* Sources */,
-				28F2F9142587089500026C3D /* Frameworks */,
-				28F2F9152587089500026C3D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HSExtension;
-			productName = HSExtension;
-			productReference = 28F2F9172587089500026C3D /* HSExtension.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -492,10 +474,6 @@
 					28E6F3B02567C0E000AC4A48 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 28E6F38F2567C0DC00AC4A48;
-					};
-					28F2F9162587089500026C3D = {
-						CreatedOnToolsVersion = 12.2;
-						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -517,7 +495,6 @@
 				28E6F38F2567C0DC00AC4A48 /* Ant */,
 				28E6F3A52567C0E000AC4A48 /* AntTests */,
 				28E6F3B02567C0E000AC4A48 /* AntUITests */,
-				28F2F9162587089500026C3D /* HSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -546,13 +523,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		28E6F3AF2567C0E000AC4A48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28F2F9152587089500026C3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -610,16 +580,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28F2F9132587089500026C3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28F2F93A258709B600026C3D /* UIAlertController+Extension.swift in Sources */,
-				28F2F9322587091B00026C3D /* DevicePermissions.swift in Sources */,
-				28F2F942258738EE00026C3D /* UIWindow+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -632,11 +592,6 @@
 			isa = PBXTargetDependency;
 			target = 28E6F38F2567C0DC00AC4A48 /* Ant */;
 			targetProxy = 28E6F3B22567C0E000AC4A48 /* PBXContainerItemProxy */;
-		};
-		28F2F91D2587089500026C3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28F2F9162587089500026C3D /* HSExtension */;
-			targetProxy = 28F2F91C2587089500026C3D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -810,7 +765,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,71 +865,6 @@
 			};
 			name = Release;
 		};
-		28F2F9202587089500026C3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HSExtension/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.HSExtension;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		28F2F9212587089500026C3D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HSExtension/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = onelcat.github.io.HSExtension;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1010,15 +900,6 @@
 			buildConfigurations = (
 				28E6F3C12567C0E000AC4A48 /* Debug */,
 				28E6F3C22567C0E000AC4A48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28F2F9222587089500026C3D /* Build configuration list for PBXNativeTarget "HSExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28F2F9202587089500026C3D /* Debug */,
-				28F2F9212587089500026C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

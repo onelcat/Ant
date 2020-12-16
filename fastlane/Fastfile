@@ -17,7 +17,20 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
-  lane :custom_lane do
+  lane :beta do
     # add actions here: https://docs.fastlane.tools/actions
+    # build_app("scheme": "Ant")
+    xcodebuild(
+      archive: true,
+      archive_path: "./build-dir/MyApp.xcarchive",
+      scheme:"Ant",
+      build_settings:{
+        "CODE_SIGN_STYLE" => "Manual",
+        "PRODUCT_BUNDLE_IDENTIFIER" => "com.wolaibang.maomaotads",
+        "DEVELOPMENT_TEAM" => "T8SDZM6J7S",
+        "PROVISIONING_PROFILE_SPECIFIER" => "2e42fe36-7a5b-4e4d-8939-3ceb50f5abd1"
+      }
+    )
+
   end
 end
