@@ -7,12 +7,12 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            uuid = "4480174B-4B99-4A38-B8F8-9197A59EBDA6"
+            uuid = "3F885A33-FB5B-4957-8638-658D3DF32160"
             shouldBeEnabled = "No"
-            nameForDebugger = "Runtime"
+            nameForDebugger = "__IOHIDEventSystemClientQueueCallback"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "objc_msgSend"
+            symbolName = "__IOHIDEventSystemClientQueueCallback"
             moduleName = "">
             <Actions>
                <BreakpointActionProxy
@@ -24,12 +24,12 @@
             </Actions>
             <Locations>
                <Location
-                  uuid = "4480174B-4B99-4A38-B8F8-9197A59EBDA6 - 9a6bdd25733d424f"
+                  uuid = "3F885A33-FB5B-4957-8638-658D3DF32160 - 4dc9c65c6e51812d"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "objc_msgSend"
-                  moduleName = "libobjc.A.dylib"
+                  symbolName = "__IOHIDEventSystemClientQueueCallback"
+                  moduleName = "IOKit"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "0">
                </Location>
@@ -39,25 +39,92 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            uuid = "E831FA30-B996-4DF5-85CE-6F33BE74DEA2"
+            uuid = "F9BA1929-6994-4290-BE7C-EA17199D0451"
             shouldBeEnabled = "No"
-            nameForDebugger = "Runloop"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "CFRunLoopSourceSignal"
+            symbolName = "__UIApplicationHandleEventQueue"
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "03460973-C21F-4D4B-93D1-89D6B872735D"
+            shouldBeEnabled = "No"
+            nameForDebugger = "sendEvent"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "sendEvent"
             moduleName = "">
             <Locations>
                <Location
-                  uuid = "E831FA30-B996-4DF5-85CE-6F33BE74DEA2 - bd899fdf7732db92"
+                  uuid = "03460973-C21F-4D4B-93D1-89D6B872735D - ac163f17d58daac"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CFRunLoopSourceSignal"
-                  moduleName = "CoreFoundation"
+                  symbolName = "AppleIDIdentityQuery::sendEvent(long, __CFArray const*, __CFError*)"
+                  moduleName = "CoreServices"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "03460973-C21F-4D4B-93D1-89D6B872735D - ca8d94e292ff27e6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ctu::RestModule::sendEvent(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, xpc::object) const"
+                  moduleName = "libTelephonyUtilDynamic.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "03460973-C21F-4D4B-93D1-89D6B872735D - 63395afa812ac711"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MCAnalyticsEvent sendEvent]"
+                  moduleName = "ManagedConfiguration"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "03460973-C21F-4D4B-93D1-89D6B872735D - 4c3621c8b87543a5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Inspector::FrontendRouter::sendEvent(WTF::String const&amp;) const"
+                  moduleName = "JavaScriptCore"
                   usesParentBreakpointCondition = "Yes"
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.RuntimeIssueBreakpoint">
+         <BreakpointContent
+            uuid = "2EEFC6D4-098F-4C6E-AA07-DC3B6ED4EB19"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            type = "65535">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "F1E35870-71C4-4E37-B7D4-7607C286A0BE"
+            shouldBeEnabled = "No"
+            condition = "sendEvent"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
